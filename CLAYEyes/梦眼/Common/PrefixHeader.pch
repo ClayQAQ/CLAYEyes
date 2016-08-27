@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  梦眼
+//
+//  Created by imac on 15/9/29.
+//  Copyright (c) 2015年 imac. All rights reserved.
+//
+
+#ifndef ___PrefixHeader_pch
+#define ___PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//屏幕尺寸
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+//view的部位，第三方框架
+#import "UIViewExt.h"
+
+#endif

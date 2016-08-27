@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PastCellId" id="gTV-IL-0wX" customClass="PastCell">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="129"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPF-7W-E8g">
+                        <rect key="frame" x="0.0" y="0.0" width="157" height="129"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkt-w7-Jet">
+                        <rect key="frame" x="49" y="51" width="59" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="1Qz-Y4-S4C"/>
+                            <constraint firstAttribute="width" constant="59" id="Ii9-8f-hj6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="mPF-7W-E8g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6yV-7w-eey"/>
+                <constraint firstItem="gkt-w7-Jet" firstAttribute="centerX" secondItem="mPF-7W-E8g" secondAttribute="centerX" id="HwF-6V-gN7"/>
+                <constraint firstItem="mPF-7W-E8g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="S3V-fX-dCB"/>
+                <constraint firstAttribute="bottom" secondItem="mPF-7W-E8g" secondAttribute="bottom" id="eRf-Z3-fPC"/>
+                <constraint firstAttribute="trailing" secondItem="mPF-7W-E8g" secondAttribute="trailing" id="raA-zQ-NjQ"/>
+                <constraint firstItem="gkt-w7-Jet" firstAttribute="centerY" secondItem="mPF-7W-E8g" secondAttribute="centerY" id="sWM-XP-eL7"/>
+            </constraints>
+            <size key="customSize" width="157" height="129"/>
+            <connections>
+                <outlet property="bgImageView" destination="mPF-7W-E8g" id="9uw-9t-Uwg"/>
+                <outlet property="name" destination="gkt-w7-Jet" id="1hF-lz-Ogg"/>
+            </connections>
+            <point key="canvasLocation" x="272.5" y="233.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
